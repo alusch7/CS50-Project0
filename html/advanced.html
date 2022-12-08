@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Project 0</title>
+        <link rel="stylesheet" href="../css/styles.css">
+    </head>
+    <body>
+        <nav class="cornerLinks">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Back to CS50 Search</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="container">
+            <p class="advancedEngineTitle">CS50 Advanced Search</p>
+        </div>
+        <form class="container" action="https://www.google.com/search?">
+            <div class="row">
+                <div class="col-8">
+                    <input type="text" name="as_q" class="smallSearchField" placeholder=" Search Terms">
+                </div>
+                <div class="col-4">
+                    <p class = "searchBoxLabels">all these words...</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-8">
+                    <input type="text" name="as_epq" class="smallSearchField" placeholder=" Search Terms">
+                </div>
+                <div class="col-4">
+                    <p class = "searchBoxLabels">this exact word or phrase...</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-8">
+                    <input type="text" name="as_oq" class="smallSearchField" placeholder=" Search Terms">
+                </div>
+                <div class="col-4">
+                    <p class = "searchBoxLabels">any of these words...</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-8">
+                    <input type="text" name="as_eq" class="smallSearchField" placeholder=" Search Terms">
+                </div>
+                <div class="col-4">
+                    <p class = "searchBoxLabels">none of these words...</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-8">
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="smallSearchButton">Search</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,77 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+$idle_color: $blue-400;
+$hover_color: shade-color($blue-400,10%);
+
+.engineTitle {
+    @extend .text-center;
+    color: #{$blue-500};
+    font-weight: 700;
+    font-size: 50pt;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.advancedEngineTitle {
+    @extend .text-left !optional;
+    color: #{$blue-500};
+    font-weight: 700;
+    font-size: 16pt;
+    padding-left: 2%;
+}
+
+.searchButton {
+    @extend .btn;
+    @extend .btn-lg;
+    --bs-btn-bg: #{$idle_color};
+    --bs-btn-color: #{$white};
+    --bs-btn-hover-bg: #{$hover_color};
+    --bs-btn-hover-color: #{$white};
+    border-radius: 5rem;
+}
+
+.searchField {
+    @extend .form-control;
+    @extend .form-control-lg;
+    border-radius: 5rem;
+}
+
+.smallSearchButton {
+    @extend .btn;
+    @extend .btn-sm;
+    --bs-btn-bg: #{$idle_color};
+    --bs-btn-color: #{$white};
+    --bs-btn-hover-bg: #{$hover_color};
+    --bs-btn-hover-color: #{$white};
+    border-radius: 5rem;
+}
+
+.feelingLucky {
+    @extend .btn;
+    @extend .btn-sm;
+    --bs-btn-bg: #{$gray-600};
+    --bs-btn-color: #{$white};
+    --bs-btn-hover-bg: #{$gray-900};
+    --bs-btn-hover-color: #{$white};
+    margin-top: 20px;
+}
+
+.smallSearchField {
+    @extend .form-control;
+    @extend .form-control-sm;
+    margin-bottom: 2.5%;
+    border-radius: 5rem;
+}
+
+.cornerLinks {
+    @extend .navbar;
+    @extend .navbar-nav;
+    @extend .navbar-expand-sm;
+    padding-right: 2%;
+    --#{$prefix}navbar-color: #{$gray-600};
+    --#{$prefix}navbar-hover-color: #{$gray-900};
+}
+
+.hideMe {
+    display: none;
+}
